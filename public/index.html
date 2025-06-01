@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinyl Vault | Premium Record Shop</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a388be2306.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="/" id="logo-link">
+          <h1>Vinyl<span>Vault</span></h1>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/shop" class="nav-link">Shop</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="search-toggle" id="search-toggle">
+          <i class="fas fa-search"></i>
+        </button>
+        <a href="/cart" class="cart-btn" id="cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+        <div class="user-menu" id="user-menu-container">
+          <button class="user-menu-btn" id="user-menu-btn">
+            <i class="fas fa-user"></i>
+          </button>
+          <div class="user-dropdown" id="user-dropdown">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search-container" id="search-container">
+      <div class="container">
+        <form id="search-form" class="search-form">
+          <input type="text" id="search-input" class="search-input" placeholder="Search for artists, albums...">
+          <button type="submit" class="search-submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div id="page-loader" class="page-loader">
+      <div class="loader-spinner"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About Vinyl Vault</h3>
+          <p>We're passionate about music and dedicated to bringing you the finest vinyl records from across genres and eras.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/shop">Shop All</a></li>
+            <li><a href="/new-arrivals">New Arrivals</a></li>
+            <li><a href="/genres">Browse by Genre</a></li>
+            <li><a href="/bestsellers">Bestsellers</a></li>
+            <li><a href="/deals">Special Deals</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Vinyl Lane, Music City</li>
+            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@vinylvault.com</li>
+          </ul>
+        </div>
+        <div class="footer-section newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Vinyl Vault. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notifications -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Modal Component -->
+  <div id="modal-container" class="modal-container">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Modal Title</h3>
+        <button id="modal-close" class="modal-close"><i class="fas fa-times"></i></button>
+      </div>
+      <div id="modal-content" class="modal-content">
+        <!-- Modal content will be loaded dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/app.js" type="module"></script>
+</body>
+</html>
